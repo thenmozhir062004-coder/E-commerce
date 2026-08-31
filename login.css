@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.page {
+  background: #35cced;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.page2 {
+  color:white;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size:98px;
+  position: absolute;
+  left: 5vw;
+  top: 100%;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+.rectangle{
+  background: #f5f5f5;
+  border-radius: 40px;
+  width: 970px;
+  height: 90vh;
+  position: absolute;
+  left: 190px;
+  top: 40px;
+}
+
+.rectangle-2 {
+  border-radius: 25px;
+  width: 465px;
+  height: 500px;
+  position: absolute;
+  left: 660px;
+  top:55px;
+  object-fit: cover;
+}
+.get-started-now {
+  color:black;
+  text-align: left;
+  font-family: "Roboto-ExtraBold", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  position: absolute;
+  left:250px;
+  top: 100px;
+  
+}
+.enter-your-credentials-to-create-your-account {
+  color:black;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left:250px;
+  top:140px;
+}
+.name{
+  color:black;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left:250px;
+  top:180px;
+}
+.box {
+  position: absolute;
+  left: 250px;
+  top: 210px;
+}
+
+.box input {
+  width:250px;
+  height: 40px;
+  padding: 10px 16px;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.Email{
+  color:black;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left:250px;
+  top:260px;
+}
+.box-1 {
+  position: absolute;
+  left:250px;
+  top:290px;
+}
+
+.box-1 input {
+  width:250px;
+  height: 40px;
+  padding: 10px 16px;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+.password{
+  color:black;
+  text-align: left;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  left:250px;
+  top:340px;
+}
+.box-2 {
+  position: absolute;
+  left:250px;
+  top:370px;
+}
+
+.box-2 input {
+  width:250px;
+  height: 40px;
+  padding: 10px 16px;
+  border: 1.5px solid #d8d8d8;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.sign-up{
+  width:250px;
+  height: 40px;
+  padding:10px 16px;
+  border-radius:8px;
+  font-size: medium;
+  color:white;
+  background-color: #35cced;
+  left:250px;
+  top:430px;
+  position:absolute;
+  text-align: center;
+}
+.have-account {
+  position: absolute;
+  left: 300px;
+  top: 490px;   
+  color:black;
+  font-size: 14px;
+  
+}
+
+
+
+
+
+
+
+
+
+
