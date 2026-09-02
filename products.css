@@ -99,8 +99,7 @@ img {
     background:
         linear-gradient(
             transparent 40%,
-            rgba(0, 0, 0, 0.7)
-        );
+            rgba(0, 0, 0, 0.7);    
 }
 
 .category-card img {
