@@ -1,0 +1,1623 @@
+/* ==============================
+   BASIC
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf8;
+    color: #292323;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* ==============================
+   HEADER
+================================ */
+
+header {
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: white;
+
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #292323;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b76e79;
+}
+
+
+/* ==============================
+   BUTTON
+================================ */
+
+.main-btn {
+    display: inline-block;
+
+    background: #292323;
+
+    color: white;
+
+    padding: 14px 25px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+.main-btn:hover {
+    background: #b76e79;
+}
+
+
+/* ==============================
+   LOGIN
+================================ */
+
+.login-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.45)
+        ),
+        url("images/dress1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.login-box {
+
+    width: 420px;
+
+    background: white;
+
+    padding: 45px;
+
+    text-align: center;
+}
+
+.login-box h1 {
+
+    font-family: Georgia, serif;
+
+    letter-spacing: 4px;
+
+    font-size: 32px;
+}
+
+.login-subtitle {
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin: 8px 0 35px;
+}
+
+.login-box h2 {
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 25px;
+}
+
+.login-box form {
+
+    text-align: left;
+}
+
+.login-box label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    margin-bottom: 18px;
+
+    outline: none;
+}
+
+.remember {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+.remember label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+    font-weight: normal;
+}
+
+.remember a {
+
+    font-size: 11px;
+
+    color: #b76e79;
+}
+
+.login-box .main-btn {
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.signup {
+
+    margin-top: 20px;
+
+    font-size: 12px;
+
+    color: #777;
+}
+
+.signup a {
+    color: #b76e79;
+}
+
+
+/* ==============================
+   HERO
+================================ */
+
+.hero {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 10%;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.35)
+        ),
+        url("images/dress1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-content p {
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+}
+
+.hero-content h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 70px;
+
+    line-height: 1.05;
+
+    margin: 15px 0;
+}
+
+.hero-content span {
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   INTRO
+================================ */
+
+.intro {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: white;
+}
+
+.small-title {
+
+    color: #b76e79;
+
+    letter-spacing: 3px;
+
+    font-size: 11px;
+}
+
+.intro h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 42px;
+
+    margin: 10px 0;
+}
+
+.intro > p:last-child {
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* ==============================
+   FEATURED
+================================ */
+
+.featured {
+
+    padding: 80px 7%;
+}
+
+.featured > h1 {
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+
+    margin-bottom: 40px;
+}
+
+.category-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.category-card {
+
+    height: 450px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.category-card img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.category-card:hover img {
+
+    transform: scale(1.07);
+}
+
+.category-overlay {
+
+    position: absolute;
+
+    left: 25px;
+
+    bottom: 25px;
+
+    color: white;
+
+    z-index: 2;
+}
+
+.category-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0,0,0,0.75)
+        );
+}
+
+.category-overlay h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: 30px;
+}
+
+.category-overlay p {
+
+    font-size: 12px;
+
+    margin: 5px 0 12px;
+}
+
+.category-overlay a {
+
+    color: white;
+
+    font-size: 11px;
+
+    border-bottom: 1px solid white;
+
+    padding-bottom: 4px;
+}
+
+
+/* ==============================
+   HOME OFFER
+================================ */
+
+.home-offer {
+
+    padding: 100px 20px;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+        ),
+        url("images/dress2.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.home-offer p {
+
+    letter-spacing: 4px;
+
+    font-size: 12px;
+}
+
+.home-offer h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    margin: 12px 0 25px;
+}
+
+.home-offer a {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    background: white;
+
+    color: #292323;
+
+    font-size: 11px;
+}
+
+
+/* ==============================
+   PAGE HEADING
+================================ */
+
+.page-heading {
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: #fff;
+
+    border-bottom: 1px solid #eee;
+}
+
+.page-heading p {
+
+    color: #b76e79;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.page-heading h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+
+    margin: 10px 0;
+}
+
+.page-heading span {
+
+    color: #777;
+
+    font-size: 13px;
+}
+
+
+/* ==============================
+   CATEGORIES PAGE
+================================ */
+
+.categories-page {
+
+    padding: 80px 7%;
+}
+
+.categories-page .category-container {
+
+    grid-template-columns:
+        repeat(2, 1fr);
+}
+
+
+/* ==============================
+   OFFERS
+================================ */
+
+.offers-page {
+
+    padding: 80px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.offer-card {
+
+    padding: 60px 30px;
+
+    text-align: center;
+
+    color: white;
+
+    background: #292323;
+}
+
+.offer-card:nth-child(2) {
+
+    background: #b76e79;
+}
+
+.offer-card:nth-child(3) {
+
+    background: #75615b;
+}
+
+.offer-card span {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.offer-card h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 50px;
+
+    margin: 15px 0;
+}
+
+.offer-card p {
+
+    font-size: 13px;
+
+    margin-bottom: 25px;
+}
+
+.offer-card a {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #292323;
+
+    padding: 12px 20px;
+
+    font-size: 11px;
+}
+
+
+/* ==============================
+   PRODUCT DETAILS
+================================ */
+
+.product-details-page {
+
+    padding: 80px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 70px;
+
+    background: white;
+}
+
+.product-detail-image img {
+
+    height: 650px;
+
+    object-fit: cover;
+}
+
+.product-info {
+
+    padding-top: 30px;
+}
+
+.product-info > small {
+
+    color: #999;
+
+    letter-spacing: 2px;
+
+    font-size: 10px;
+}
+
+.product-info h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 48px;
+
+    margin: 10px 0;
+}
+
+.rating {
+
+    font-size: 13px;
+
+    margin: 15px 0;
+}
+
+.rating span {
+
+    color: #777;
+
+    margin-left: 10px;
+}
+
+.product-info h2 {
+
+    font-size: 28px;
+
+    margin: 20px 0 5px;
+}
+
+.product-info h2 del {
+
+    color: #999;
+
+    font-size: 15px;
+
+    margin-left: 8px;
+}
+
+.discount-text {
+
+    color: #b76e79;
+
+    font-weight: bold;
+
+    font-size: 12px;
+}
+
+.description {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin: 25px 0;
+}
+
+.product-info h4 {
+
+    margin: 20px 0 10px;
+}
+
+.sizes {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+.sizes button {
+
+    width: 45px;
+
+    height: 42px;
+
+    background: white;
+
+    border: 1px solid #ccc;
+
+    cursor: pointer;
+}
+
+.sizes button:hover {
+
+    background: #292323;
+
+    color: white;
+}
+
+.quantity {
+
+    width: 120px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border: 1px solid #ccc;
+}
+
+.quantity button {
+
+    width: 40px;
+
+    height: 100%;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+.product-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin: 30px 0;
+}
+
+.product-buttons a {
+
+    flex: 1;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+
+    background: #292323;
+
+    color: white;
+}
+
+.product-buttons a:last-child {
+
+    background: white;
+
+    color: #292323;
+
+    border: 1px solid #292323;
+}
+
+.delivery-info {
+
+    border-top: 1px solid #ddd;
+
+    padding-top: 15px;
+}
+
+.delivery-info p {
+
+    font-size: 12px;
+
+    color: #666;
+
+    margin: 10px 0;
+}
+
+
+/* ==============================
+   CART
+================================ */
+
+.cart-page {
+
+    padding: 70px 8%;
+
+    background: white;
+}
+
+.cart-item {
+
+    display: grid;
+
+    grid-template-columns:
+        120px 1fr auto auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+
+    width: 120px;
+
+    height: 150px;
+
+    object-fit: cover;
+}
+
+.cart-product-info small {
+
+    color: #999;
+
+    font-size: 10px;
+}
+
+.cart-product-info h2 {
+
+    font-family: Georgia, serif;
+
+    margin: 8px 0;
+}
+
+.cart-product-info p {
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin: 4px 0;
+}
+
+.cart-product-info a {
+
+    color: #b76e79;
+
+    font-size: 11px;
+}
+
+.cart-summary {
+
+    max-width: 400px;
+
+    margin: 50px 0 0 auto;
+
+    padding: 30px;
+
+    background: #fffaf8;
+}
+
+.cart-summary h2 {
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 25px;
+}
+
+.cart-summary p {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+
+    margin: 15px 0;
+}
+
+.cart-summary h3 {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 20px 0;
+}
+
+.cart-summary .main-btn {
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* ==============================
+   CHECKOUT
+================================ */
+
+.checkout-page {
+
+    padding: 70px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        1.4fr 0.8fr;
+
+    gap: 40px;
+}
+
+.checkout-form,
+.checkout-summary {
+
+    background: white;
+
+    padding: 35px;
+}
+
+.checkout-form h2,
+.checkout-summary h2 {
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 25px;
+}
+
+.checkout-form label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    margin-bottom: 18px;
+}
+
+.checkout-form textarea {
+
+    height: 100px;
+
+    resize: none;
+}
+
+.two-input {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.payment-option {
+
+    border: 1px solid #ddd;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+}
+
+.payment-option input {
+
+    width: auto !important;
+
+    margin-right: 10px;
+}
+
+.checkout-product {
+
+    display: grid;
+
+    grid-template-columns:
+        65px 1fr auto;
+
+    gap: 12px;
+
+    align-items: center;
+}
+
+.checkout-product img {
+
+    width: 65px;
+
+    height: 75px;
+
+    object-fit: cover;
+}
+
+.checkout-product h3 {
+
+    font-size: 13px;
+}
+
+.checkout-product p {
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+.checkout-summary > p {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+
+    margin: 15px 0;
+}
+
+.total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 25px 0;
+}
+
+.checkout-summary .main-btn {
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* ==============================
+   SUCCESS PAGE
+================================ */
+
+.success-page {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.success-box {
+
+    max-width: 650px;
+}
+
+.success-icon {
+
+    width: 85px;
+
+    height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #579267;
+
+    color: white;
+
+    font-size: 45px;
+}
+
+.success-box > p {
+
+    color: #579267;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    margin: 25px 0 10px;
+}
+
+.success-box h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.success-box > span {
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+.order-number {
+
+    background: white;
+
+    padding: 20px;
+
+    margin: 30px auto;
+
+    max-width: 250px;
+}
+
+.order-number small {
+
+    display: block;
+
+    color: #999;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+.order-number strong {
+
+    display: block;
+
+    margin-top: 7px;
+}
+
+
+/* ==============================
+   THANK YOU
+================================ */
+
+.thankyou-page {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.thankyou-page > div {
+
+    max-width: 700px;
+}
+
+.thankyou-page > div > p:first-child {
+
+    color: #b76e79;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+.thankyou-page h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: 65px;
+
+    margin: 10px 0;
+}
+
+.thankyou-page h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 15px;
+}
+
+.thank-text {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+}
+
+.thank-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.outline-btn {
+
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    border: 1px solid #292323;
+
+    color: #292323;
+
+    font-size: 11px;
+}
+
+
+/* ==============================
+   MY ACCOUNT
+================================ */
+
+.account-page {
+
+    padding: 70px 8%;
+
+    display: grid;
+
+    grid-template-columns:
+        280px 1fr;
+
+    gap: 35px;
+
+    background: white;
+}
+
+.account-sidebar {
+
+    background: #fffaf8;
+
+    padding: 30px;
+}
+
+.profile {
+
+    text-align: center;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-circle {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background: #b76e79;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+}
+
+.profile h2 {
+
+    font-family: Georgia, serif;
+
+    margin: 10px 0 5px;
+}
+
+.profile p {
+
+    color: #777;
+
+    font-size: 11px;
+}
+
+.account-sidebar ul {
+
+    list-style: none;
+
+    margin-top: 20px;
+}
+
+.account-sidebar li {
+
+    padding: 14px 5px;
+
+    border-bottom: 1px solid #eee;
+
+    font-size: 13px;
+}
+
+.account-details {
+
+    padding: 30px;
+}
+
+.account-details h2 {
+
+    font-family: Georgia, serif;
+
+    margin-bottom: 25px;
+}
+
+.account-details label {
+
+    display: block;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+.account-details input {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    margin-bottom: 18px;
+}
+
+.account-details button {
+
+    background: #292323;
+
+    color: white;
+
+    border: none;
+
+    padding: 13px 25px;
+
+    cursor: pointer;
+}
+
+.recent-order-title {
+
+    margin-top: 45px;
+}
+
+.recent-order {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    border: 1px solid #ddd;
+
+    padding: 20px;
+}
+
+.recent-order p {
+
+    color: #777;
+
+    font-size: 12px;
+
+    margin-top: 5px;
+}
+
+.delivered {
+
+    color: #579267 !important;
+}
+
+
+/* ==============================
+   FOOTER
+================================ */
+
+footer {
+
+    background: #292323;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer h2 {
+
+    font-family: Georgia, serif;
+
+    letter-spacing: 4px;
+}
+
+footer p {
+
+    color: #aaa;
+
+    font-size: 12px;
+
+    margin: 10px 0;
+}
+
+footer a {
+
+    color: white;
+
+    font-size: 12px;
+
+    margin: 0 8px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    header {
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .category-container {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .offers-page {
+
+        grid-template-columns: 1fr;
+    }
+
+    .product-details-page {
+
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-page {
+
+        grid-template-columns: 1fr;
+    }
+
+    .account-page {
+
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .category-container {
+
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+
+        padding: 40px 25px;
+
+        min-height: 550px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 48px;
+    }
+
+    .home-offer h1 {
+
+        font-size: 45px;
+    }
+
+    .page-heading h1 {
+
+        font-size: 36px;
+    }
+
+    .product-info h1 {
+
+        font-size: 36px;
+    }
+
+    .product-detail-image img {
+
+        height: 450px;
+    }
+
+    .cart-item {
+
+        grid-template-columns:
+            90px 1fr;
+    }
+
+    .cart-item .quantity,
+    .cart-item > h3 {
+
+        grid-column: 2;
+    }
+
+    .two-input {
+
+        grid-template-columns: 1fr;
+    }
+
+    .thankyou-page h1 {
+
+        font-size: 45px;
+    }
+
+    .thank-buttons {
+
+        flex-direction: column;
+    }
+
+}
