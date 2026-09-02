@@ -17,38 +17,12 @@ html, body {
   position: relative;
   overflow: hidden;
 }
-
-.page2 {
-  color:white;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
-  font-size:98px;
-  position: absolute;
-  left: 5vw;
-  top:90%;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
-  white-space: nowrap;
-}
-.rectangle{
-  background:#C9D0B5;
-  border-radius: 40px;
-  width: 970px;
-  height: 90vh;
-  position: absolute;
-  left: 190px;
-  top: 40px;
-}
-
 .rectangle-2 {
-  border-radius: 25px;
-  width: 465px;
-  height: 500px;
+  
+  width:625px;
+  height:100vh;
   position: absolute;
-  left: 660px;
-  top:55px;
-  object-fit: cover;
+  left:650px;
 }
 .get-started-now {
   color:black;
