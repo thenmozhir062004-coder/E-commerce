@@ -20,7 +20,7 @@ body {
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
+    font-family: "playfair",sans-serif;
     font-size: 24px;
     font-weight: 600;
     letter-spacing: 2px;
